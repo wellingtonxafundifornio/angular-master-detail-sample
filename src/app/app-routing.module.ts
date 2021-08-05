@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+/*
+  path: path in the URL
+  loadChildren: load the module
+*/
+const routes: Routes = [
+  {path: 'categories', loadChildren: './pages/categories/categories.module#CategoriesModule'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
